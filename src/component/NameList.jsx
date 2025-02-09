@@ -11,7 +11,7 @@ export default function NameList() {
       ) : (
         <ul>
           {names.map((n, index) => (
-            <li key={index} className="border-b py-1">{n.name}</li>
+            <li key={index} className="border-b py-1">{n}</li>
           ))}
         </ul>
       )}
