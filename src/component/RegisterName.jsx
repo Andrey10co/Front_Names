@@ -21,7 +21,7 @@ export default function RegisterName() {
           }}
           className="bg-blue-500 text-white px-4 py-1 rounded hover:bg-blue-700"
         >
-          Btn
+          Guardar
         </button>
       </div>
     );
