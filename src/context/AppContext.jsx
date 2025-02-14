@@ -8,7 +8,7 @@ export function AppContextProvider({ children }) {
   // Obtener los nombres almacenados desde el backend
   async function fetchNames() {
     try {
-      const response = await fetch("http://localhost:8080/api/getNames");
+      const response = await fetch("http://209.38.53.48/api/getNames");
       if (!response.ok) throw new Error("Error al obtener los nombres");
       const namesList = await response.json();
       setNames(namesList);
@@ -20,7 +20,7 @@ export function AppContextProvider({ children }) {
   // Agregar un nuevo nombre al backend y actualizar la lista local
   async function addName(name) {
     try {
-      const response = await fetch("http://localhost:8080/api/sendNames", {
+      const response = await fetch("http://209.38.53.48/api/sendNames", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name }),
