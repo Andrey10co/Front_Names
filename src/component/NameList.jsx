@@ -11,11 +11,7 @@ export default function NameList() {
       ) : (
         <ul className="name-list">
           {names.map((n, index) => (
-<<<<<<< Updated upstream
-            <li key={index} className="border-b py-1">{n.name}</li>
-=======
             <li key={index} className="name-list-item">{n}</li>
->>>>>>> Stashed changes
           ))}
         </ul>
       )}
