@@ -5,13 +5,13 @@ export default function NameList() {
   const { names } = useContext(AppContext);
 
   return (
-    <div className="border rounded p-2">
+    <div className="name-list-container">
       {names.length === 0 ? (
-        <p className="text-gray-500">No hay nombres guardados.</p>
+        <p className="name-list-empty">No hay nombres guardados.</p>
       ) : (
-        <ul>
+        <ul className="name-list">
           {names.map((n, index) => (
-            <li key={index} className="border-b py-1">{n}</li>
+            <li key={index} className="name-list-item">{n}</li>
           ))}
         </ul>
       )}
