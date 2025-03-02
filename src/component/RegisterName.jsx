@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 import { AppContext } from "../context/AppContext";
-
+import '../styles/formularioReg.css';
 export default function RegisterName() {
   const [name, setName] = useState("");
   const { addName } = useContext(AppContext);

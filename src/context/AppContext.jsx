@@ -4,6 +4,8 @@ export const AppContext = createContext();
 
 export function AppContextProvider({ children }) {
   const [names, setNames] = useState([]);
+  const { userId, userType, isTokenExpired } = useAuth(); 
+  const token = sessionStorage.getItem('accessToken');
 
   // Obtener los nombres almacenados desde el backend
   async function fetchNames() {

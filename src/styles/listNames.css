@@ -1,0 +1,48 @@
+
+/* Contenedor de la lista de nombres */
+.name-list-container {
+    width: calc(100vw - 2cm);
+    max-width: 800px;
+    min-height: 15vh;
+    background-color: #2d2d2d;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+    margin: 1cm auto;
+  }
+  
+  /* Texto de lista vacía */
+  .name-list-empty {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #b0b0b0;
+    text-align: center;
+  }
+  
+  /* Estilo de la lista */
+  .name-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Elemento de la lista */
+  .name-list-item {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    padding: 10px;
+    border-bottom: 1px solid #646cff;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Último ítem sin borde */
+  .name-list-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Efecto hover en cada nombre */
+  .name-list-item:hover {
+    background-color: #3a3a3a;
+  }
+  

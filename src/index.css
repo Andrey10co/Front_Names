@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   /* Tipografía */
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -7,7 +11,7 @@
   /* Esquema de color */
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.9);
-  background-color: #1e1e1e;
+  background-color: #030317;
 
   /* Optimización de renderizado */
   font-synthesis: none;
@@ -29,51 +33,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Cuerpo */
-body {
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 320px;
-  min-height: 100vh;
-  padding: 20px;
-  background: radial-gradient(circle at top left, #242424, #1a1a1a);
-}
-
-/* Títulos */
-h1 {
-  font-size: 3em;
-  line-height: 1.2;
-  font-weight: 700;
-  text-align: center;
-}
-
-/* Botones */
-button {
-  border-radius: 8px;
-  border: none;
-  padding: 12px 24px;
-  font-size: 1em;
-  font-weight: 600;
-  font-family: inherit;
-  background-color: #2d2d2d;
-  color: white;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-button:hover {
-  background-color: #444;
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
-}
-
-button:focus,
-button:focus-visible {
-  outline: 3px solid #646cff;
-}
-
 /* Modo claro */
 @media (prefers-color-scheme: light) {
   :root {
@@ -88,134 +47,4 @@ button:focus-visible {
   a:hover {
     color: #434bff;
   }
-
-  body {
-    background: radial-gradient(circle at top left, #ffffff, #f0f0f0);
-  }
-
-  button {
-    background-color: #e0e0e0;
-    color: #333;
-  }
-
-  button:hover {
-    background-color: #d4d4d4;
-  }
-}
-/* Contenedor del formulario */
-.register-container {
-  width: calc(100vw - 2cm);
-  max-width: 800px;
-  min-height: 40vh;
-  background-color: #2d2d2d;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
-  margin: 1cm auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-
-/* Estilo del título */
-.register-title {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 1rem;
-}
-
-/* Etiqueta */
-.register-label {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: white;
-  margin-bottom: 0.5rem;
-}
-
-/* Input estilizado */
-.register-input {
-  width:400px;
-  padding: 12px;
-  font-size: 1rem;
-  color: white;
-  background-color: #3a3a3a;
-  border: 2px solid #646cff;
-  border-radius: 6px;
-  outline: none;
-  transition: all 0.3s ease-in-out;
-}
-
-/* Efecto al hacer focus */
-.register-input:focus {
-  border-color: #8fa6ff;
-  box-shadow: 0px 0px 8px rgba(143, 166, 255, 0.5);
-}
-
-/* Botón estilizado */
-.register-button {
-  margin-top: 1rem;
-  background-color: #646cff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
-}
-
-/* Efecto hover en botón */
-.register-button:hover {
-  background-color: #535bf2;
-}
-/* Contenedor de la lista de nombres */
-.name-list-container {
-  width: calc(100vw - 2cm);
-  max-width: 800px;
-  min-height: 15vh;
-  background-color: #2d2d2d;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
-  margin: 1cm auto;
-}
-
-/* Texto de lista vacía */
-.name-list-empty {
-  font-size: 1rem;
-  font-weight: 500;
-  color: #b0b0b0;
-  text-align: center;
-}
-
-/* Estilo de la lista */
-.name-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* Elemento de la lista */
-.name-list-item {
-  font-size: 1rem;
-  font-weight: 500;
-  color: white;
-  padding: 10px;
-  border-bottom: 1px solid #646cff;
-  transition: background-color 0.3s ease-in-out;
-}
-
-/* Último ítem sin borde */
-.name-list-item:last-child {
-  border-bottom: none;
-}
-
-/* Efecto hover en cada nombre */
-.name-list-item:hover {
-  background-color: #3a3a3a;
 }

@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { AppContext } from "../context/AppContext";
+import '../styles/listNames.css';
 
 export default function NameList() {
   const { names } = useContext(AppContext);
